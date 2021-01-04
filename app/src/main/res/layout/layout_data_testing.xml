@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/DataTestingCard"
+    app:cardCornerRadius="20dp"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:background="@color/whiteCardColor">
+
+
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="Data Testing"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInput_nama"
+            style="@style/parent"
+            android:layout_marginTop="0dp">
+            <EditText
+                android:id="@+id/editText_nama"
+                android:textSize="17sp"
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="Nama Balita"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:textSize="17sp"
+                android:text="Jenis Kelamin : "/>
+
+            <Spinner
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/sp_jenis_kelamin"
+                android:entries="@array/jenis_kelamin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInput_berat"
+            style="@style/parent"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/editText_berat"
+                android:textSize="17sp"
+                style="@style/modifiedEditText"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="Berat Badan (kg)"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInput_tinggi"
+            style="@style/parent"
+            android:layout_marginTop="20dp">
+            <EditText
+                android:id="@+id/editText_tinggi"
+                android:textSize="17sp"
+                style="@style/modifiedEditText"
+                android:hint="Tinggi Badan (cm)"
+                android:maxLines="1"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_prediksi"
+            style="@style/tombolPrediksi"
+            android:text="Proses"
+            android:clickable="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+</androidx.cardview.widget.CardView>

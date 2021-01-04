@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_testing"
+            android:icon="@drawable/ic_data_testing"
+            android:title="@string/menu_testing" />
+        <item
+            android:id="@+id/nav_training"
+            android:icon="@drawable/ic_data_training"
+            android:title="@string/menu_training" />
+
+
+        <item
+            android:id="@+id/nav_riwayat"
+            android:icon="@drawable/ic_riwayat_testing"
+            android:title="@string/menu_riwayat_testing" />
+
+
+<!--        <item-->
+<!--            android:id="@+id/nav_tools"-->
+<!--            android:icon="@drawable/ic_menu_manage"-->
+<!--            android:title="@string/menu_tools"-->
+<!--            />-->
+
+
+    </group>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_about"
+                android:title="@string/menu_about" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit"
+                android:title="@string/menu_exit" />
+
+
+        </menu>
+    </item>
+
+</menu>

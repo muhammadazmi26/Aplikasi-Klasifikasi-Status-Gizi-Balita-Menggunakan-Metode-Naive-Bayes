@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>  // menyamakan warna status bar android dengan warna aplikasi
+    </style>
+
+    <style name="modifiedEditText" parent="parent">
+        <item name="android:textSize">12sp</item>
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/whiteCardColor
+        </item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.my">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>
